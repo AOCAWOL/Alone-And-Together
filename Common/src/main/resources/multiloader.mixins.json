@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.example.examplemod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "multiloader.refmap.json",
+  "mixins": [
+    "ExampleMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

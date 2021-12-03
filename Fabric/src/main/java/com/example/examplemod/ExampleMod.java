@@ -2,6 +2,7 @@ package com.example.examplemod;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
+import net.fabricmc.fabric.impl.dimension.FabricDimensionInternals;
 
 public class ExampleMod implements ModInitializer {
     
@@ -15,6 +16,8 @@ public class ExampleMod implements ModInitializer {
         // Use Fabric to bootstrap the Common mod.
         Constants.LOG.info("Hello Fabric world!");
         CommonClass.init();
+    
+        FabricDimensionInternals.getCustomTarget();
         
         // Some code like events require special initialization from the
         // loader specific code.

@@ -7,10 +7,15 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
 public class CommonClass {
+    public static final String MOD_ID = "multiloader";
+    
+    public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
     
     // This method serves as an initialization hook for the mod. The vanilla
     // game has no mechanism to load tooltip listeners so this must be

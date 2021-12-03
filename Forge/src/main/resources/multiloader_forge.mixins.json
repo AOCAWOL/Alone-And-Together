@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.example.examplemod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "multiloader_forge.refmap.json",
+  "mixins": [
+    "MixinForgeExample"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
