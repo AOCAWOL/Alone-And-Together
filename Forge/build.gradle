@@ -79,7 +79,8 @@ dependencies {
 }
 
 mixin {
-    add sourceSets.main, "${mod_id}.refmap.json"
+    add project(":Common").sourceSets.main, "${mod_id}.refmap.json"
+
     add sourceSets.main, "${mod_id}_forge.refmap.json"
 
     config "${mod_id}.mixins.json"
@@ -108,8 +109,6 @@ processResources {
 
 
 jar.finalizedBy('reobfJar')
-jar.manifest.attributes("MixinConfigs": "${mod_id}.mixins.json,${mod_id}_forge.mixins.json")
-
 
 publishing {
     publications {
