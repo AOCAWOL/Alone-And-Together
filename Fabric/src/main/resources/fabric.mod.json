@@ -19,11 +19,12 @@
     "environment": "*",
     "entrypoints": {
       "main": [
-        "com.example.examplemod.ExampleMod"
+        "corgitaco.modid.ModIDFabric"
       ]
     },
     "mixins": [
-      "multiloader_fabric.mixins.json"
+      "modid_fabric.mixins.json",
+      "modid.mixins.json"
     ],
   
     "depends": {
