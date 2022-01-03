@@ -1,6 +1,6 @@
-package corgitaco.modid.mixin;
+package potionstudios.aloneandtogether.mixin;
 
-import corgitaco.modid.ModID;
+import potionstudios.aloneandtogether.AloneAndTogether;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,6 +12,6 @@ public class MixinFabricExample {
     
     @Inject(method = "lambda$static$0([Lnet/fabricmc/fabric/api/event/lifecycle/v1/ServerChunkEvents$Load;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/chunk/LevelChunk;)V", at = @At("HEAD"), remap = true)
     private static void example(CallbackInfo ci) {
-        ModID.LOGGER.info("Hello from Fabric's Chunk Load Event!");
+        AloneAndTogether.LOGGER.info("Hello from Fabric's Chunk Load Event!");
     }
 }

@@ -1,10 +1,10 @@
-package corgitaco.modid;
+package potionstudios.aloneandtogether;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class ModID {
-    public static final String MOD_ID = "modid";
+public class AloneAndTogether {
+    public static final String MOD_ID = "aloneandtogether";
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
     
     

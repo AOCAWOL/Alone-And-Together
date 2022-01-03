@@ -1,6 +1,6 @@
-package corgitaco.modid.mixin;
+package potionstudios.aloneandtogether.mixin;
 
-import corgitaco.modid.ModID;
+import potionstudios.aloneandtogether.AloneAndTogether;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraftforge.event.world.ChunkEvent;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,6 +13,6 @@ public class MixinForgeExample {
     
     @Inject(method = "<init>(Lnet/minecraft/world/level/chunk/ChunkAccess;)V", at = @At("RETURN"), remap = false)
     private void test2(ChunkAccess chunk, CallbackInfo ci) {
-        ModID.LOGGER.info("Hello from Forge's Chunk Load Event!");
+        AloneAndTogether.LOGGER.info("Hello from Forge's Chunk Load Event!");
     }
 }

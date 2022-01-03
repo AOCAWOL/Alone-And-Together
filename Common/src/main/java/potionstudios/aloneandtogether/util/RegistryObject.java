@@ -1,4 +1,4 @@
-package corgitaco.modid.util;
+package potionstudios.aloneandtogether.util;
 
 public record RegistryObject<T>(T object, String id) {
 }

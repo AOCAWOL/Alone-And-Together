@@ -1,25 +1,25 @@
 modLoader="javafml" #mandatory
 loaderVersion="[38,)"
 license="CC0"
-issueTrackerURL="https://github.com/CorgiTaco/MultiLoader-Template/issues" #optional
+issueTrackerURL="https://github.com/AOCAWOL/Alone-And-Together/issues" #optional
 [[mods]]
-modId="modid"
+modId="aloneandtogether"
 version="${file.jarVersion}"
-displayName="Example Mod"
-displayURL="https://github.com/CorgiTaco/MultiLoader-Template/"
-logoFile="multiloader.png"
+displayName="Alone And Together"
+displayURL="https://github.com/AOCAWOL/Alone-And-Together"
+logoFile="aloneandtogether.png"
 credits=""
-authors="Corgi Taco"
+authors="Corgi Taco, YaBoiChips, AOCAWOL"
 description='''
 '''
-[[dependencies.modid]]
+[[dependencies.aloneandtogether]]
     modId="forge" #mandatory
     mandatory=true #mandatory
     versionRange="[38,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.modid]]
+[[dependencies.aloneandtogether]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18,1.19)"

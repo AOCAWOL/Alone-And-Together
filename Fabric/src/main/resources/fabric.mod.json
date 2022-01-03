@@ -1,9 +1,9 @@
 {
     "schemaVersion": 1,
-    "id": "modid",
+    "id": "aloneandtogether",
     "version": "${version}",
   
-    "name": "Example Mod",
+    "name": "Alone And Together",
     "description": "This is an example description! Tell everyone what your mod is about!",
     "authors": [
       "Me!"
@@ -19,12 +19,12 @@
     "environment": "*",
     "entrypoints": {
       "main": [
-        "corgitaco.modid.ModIDFabric"
+        "potionstudios.aloneandtogether.AloneAndTogetherFabric"
       ]
     },
     "mixins": [
-      "modid_fabric.mixins.json",
-      "modid.mixins.json"
+      "aloneandtogether_fabric.mixins.json",
+      "aloneandtogether.mixins.json"
     ],
   
     "depends": {

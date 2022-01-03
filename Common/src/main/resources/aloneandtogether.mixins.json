@@ -1,9 +1,10 @@
 {
   "required": true,
-  "package": "corgitaco.modid.mixin",
+  "package": "potionstudios.aloneandtogether.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "${refmap_target}refmap.json",
   "mixins": [
-    "MixinFabricExample"
+    "MixinCommonExample"
   ],
   "client": [
   ],
