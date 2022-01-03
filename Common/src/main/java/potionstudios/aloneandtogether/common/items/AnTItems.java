@@ -1,5 +1,6 @@
 package potionstudios.aloneandtogether.common.items;
 
+import net.minecraft.core.Registry;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -17,14 +18,14 @@ import static potionstudios.aloneandtogether.common.items.AnTCreativeTab.CREATIV
 public class AnTItems {
     public static final List<RegistryObject<Item>> ITEMS = new ArrayList<>();
 
-    public static final Item BOGLED_PLANKS = createBlockItem(AnTBlocks.BOGLED_PLANKS, new Item.Properties().tab(CREATIVE_TAB), "bogled_planks");
+    public static final Item BOGLED_PLANKS = createBlockItem(AnTBlocks.BOGLED_PLANKS, new Item.Properties().tab(CREATIVE_TAB));
 
     public static Item createItem(Item item, String id) {
         ITEMS.add(new RegistryObject<>(item, id));
         return item;
     }
-    public static Item createBlockItem(Block block, Item.Properties props, String id) {
-        return createItem(new BlockItem(block, props), id);
+    public static Item createBlockItem(Block block, Item.Properties props) {
+        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).toString());
     }
 
 
