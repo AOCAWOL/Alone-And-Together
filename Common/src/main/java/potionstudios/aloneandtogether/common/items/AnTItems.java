@@ -18,18 +18,19 @@ import static potionstudios.aloneandtogether.common.items.AnTCreativeTab.CREATIV
 public class AnTItems {
     public static final List<RegistryObject<Item>> ITEMS = new ArrayList<>();
 
-    public static final Item BOGLED_PLANKS = createBlockItem(AnTBlocks.BOGLED_PLANKS, new Item.Properties().tab(CREATIVE_TAB));
+    //boggled
+    public static final Item BOGGLED_PLANKS = createBlockItem(AnTBlocks.BOGGLED_PLANKS, new Item.Properties().tab(CREATIVE_TAB));
+
+    public static final Item BOGGLED_THORNS = createItem(new BlockItem(AnTBlocks.BOGGLED_THORNS, new Item.Properties().tab(CREATIVE_TAB)), "boggled_thorns");
+
 
     public static Item createItem(Item item, String id) {
         ITEMS.add(new RegistryObject<>(item, id));
         return item;
     }
     public static Item createBlockItem(Block block, Item.Properties props) {
-        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).toString());
+        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).getPath());
     }
-
-
-
 
     public static void bootStrap(Consumer<Collection<RegistryObject<Item>>> registryStrategy) {
         registryStrategy.accept(ITEMS);

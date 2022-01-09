@@ -1,11 +1,11 @@
 package potionstudios.aloneandtogether.mixin;
 
-import potionstudios.aloneandtogether.AloneAndTogether;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import potionstudios.aloneandtogether.AloneAndTogether;
 
 @Mixin(MinecraftServer.class)
 public class MixinCommonExample {
