@@ -21,7 +21,7 @@ public class AnTItems {
     //boggled
     public static final Item BOGGLED_PLANKS = createBlockItem(AnTBlocks.BOGGLED_PLANKS, new Item.Properties().tab(CREATIVE_TAB));
 
-    public static final Item BOGGLED_THORNS = createItem(new BlockItem(AnTBlocks.BOGGLED_THORNS, new Item.Properties().tab(CREATIVE_TAB)), "boggled_thorns");
+    public static final Item BOGGLED_THORNS = createBlockItem(AnTBlocks.BOGGLED_THORNS, new Item.Properties().tab(CREATIVE_TAB));
 
 
     public static Item createItem(Item item, String id) {
@@ -29,7 +29,7 @@ public class AnTItems {
         return item;
     }
     public static Item createBlockItem(Block block, Item.Properties props) {
-        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).getPath());
+        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).getPath().replace("aloneandtogether:", ""));
     }
 
     public static void bootStrap(Consumer<Collection<RegistryObject<Item>>> registryStrategy) {
