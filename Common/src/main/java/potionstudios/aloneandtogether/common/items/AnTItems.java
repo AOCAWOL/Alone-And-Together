@@ -24,6 +24,8 @@ public class AnTItems {
 
     public static final Item BOGGLED_THORNS = createBlockItem(AnTBlocks.BOGGLED_THORNS, new Item.Properties().tab(CREATIVE_TAB), "boggled_thorns");
 
+    public static final Item BOGGLED_VINES = createBlockItem(AnTBlocks.BOGGLED_VINES, new Item.Properties().tab(CREATIVE_TAB), "boggled_vines");
+
 
     public static Item createItem(Item item, String id) {
             ITEMS.add(new RegistryObject<>(item, id));

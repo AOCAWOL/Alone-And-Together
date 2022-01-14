@@ -22,6 +22,9 @@ public class AnTBlocks {
 
     public static final Block BOGGLED_THORNS = createThornBlock("boggled_thorns");
 
+    public static final Block BOGGLED_VINES = createVineBlock("boggled_vines");
+    public static final Block BOGGLED_VINES_PLANT = createVinePlantBlock("boggled_vines_plant");
+
 
     static Block createPlanks(String id) {
         Block createBlock = new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BROWN).sound(SoundType.WOOD).strength(2.0f, 3.0f));
@@ -127,6 +130,18 @@ public class AnTBlocks {
 
     static Block createThornBlock(String id){
         Block createBlock = new BoggledThorns(BlockBehaviour.Properties.copy(Blocks.DEAD_BUSH));
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createVineBlock(String id){
+        Block createBlock = new BoggledVinesBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES));
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createVinePlantBlock(String id){
+        Block createBlock = new BoggledVinesPlantBlock(BlockBehaviour.Properties.copy(Blocks.WEEPING_VINES_PLANT));
         createBlock(createBlock, id);
         return createBlock;
     }
