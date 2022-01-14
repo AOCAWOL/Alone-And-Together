@@ -23,7 +23,7 @@ public class AnTBlocks {
     public static final Block BOGGLED_ROOTS = createRoots("boggled_roots");
     public static final Block BOGGLED_FENCE = createFence("boggled_fence");
     public static final Block BOGGLED_WOOD = createWood("boggled_wood");
-    public static final Block BOGGLED_WOOD_WALL = createWoodWall("boggled_wood_wall");
+    public static final Block BOGGLED_WOOD_WALL = createWoodWall("boggled_root_wall");
     public static final Block BOGGLED_FENCE_GATE = createFenceGate("boggled_fence_gate");
     public static final Block BOGGLED_SLAB = createWoodSlab("boggled_slab");
     public static final Block BOGGLED_PRESSURE_PLATE = createWoodPressurePlate("boggled_pressure_plate");
