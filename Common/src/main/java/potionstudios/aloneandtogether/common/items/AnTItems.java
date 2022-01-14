@@ -20,20 +20,18 @@ public class AnTItems {
     public static final List<RegistryObject<Item>> ITEMS = new ArrayList<>();
 
     //boggled
-    public static final Item BOGGLED_PLANKS = createBlockItem(AnTBlocks.BOGGLED_PLANKS, new Item.Properties().tab(CREATIVE_TAB));
+    public static final Item BOGGLED_PLANKS = createBlockItem(AnTBlocks.BOGGLED_PLANKS, new Item.Properties().tab(CREATIVE_TAB), "boggled_planks");
 
-    public static final Item BOGGLED_THORNS = createBlockItem(AnTBlocks.BOGGLED_THORNS, new Item.Properties().tab(CREATIVE_TAB));
+    public static final Item BOGGLED_THORNS = createBlockItem(AnTBlocks.BOGGLED_THORNS, new Item.Properties().tab(CREATIVE_TAB), "boggled_thorns");
 
 
     public static Item createItem(Item item, String id) {
-        if (id != null && !id.equals("air")) {
             ITEMS.add(new RegistryObject<>(item, id));
             return item;
-        } else return null;
     }
 
-    public static Item createBlockItem(Block block, Item.Properties props) {
-        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).getPath());
+    public static Item createBlockItem(Block block, Item.Properties props, String id) {
+        return createItem(new BlockItem(block, props), id);
     }
 
     public static void bootStrap(Consumer<Collection<RegistryObject<Item>>> registryStrategy) {
