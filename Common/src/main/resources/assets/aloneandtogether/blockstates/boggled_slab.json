@@ -4,7 +4,7 @@
       "model": "aloneandtogether:block/boggled_slab"
     },
     "type=double": {
-      "model": "aloneandtogether:block/boggled"
+      "model": "aloneandtogether:block/boggled_planks"
     },
     "type=top": {
       "model": "aloneandtogether:block/boggled_slab_top"
