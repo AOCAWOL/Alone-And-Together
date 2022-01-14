@@ -1,6 +1,7 @@
 package potionstudios.aloneandtogether.common.items;
 
 import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -25,11 +26,14 @@ public class AnTItems {
 
 
     public static Item createItem(Item item, String id) {
-        ITEMS.add(new RegistryObject<>(item, id));
-        return item;
+        if (id != null && !id.equals("air")) {
+            ITEMS.add(new RegistryObject<>(item, id));
+            return item;
+        } else return null;
     }
+
     public static Item createBlockItem(Block block, Item.Properties props) {
-        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).getPath().replace("aloneandtogether:", ""));
+        return createItem(new BlockItem(block, props), Registry.BLOCK.getKey(block).getPath());
     }
 
     public static void bootStrap(Consumer<Collection<RegistryObject<Item>>> registryStrategy) {
