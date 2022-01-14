@@ -8,6 +8,7 @@ import net.minecraft.world.level.material.MaterialColor;
 import potionstudios.aloneandtogether.mixin.access.*;
 import potionstudios.aloneandtogether.util.RegistryObject;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -19,6 +20,20 @@ public class AnTBlocks {
 
     //boggled wood
     public static final Block BOGGLED_PLANKS = createPlanks("boggled_planks");
+    public static final Block BOGGLED_ROOTS = createRoots("boggled_roots");
+    public static final Block BOGGLED_FENCE = createFence("boggled_fence");
+    public static final Block BOGGLED_WOOD = createWood("boggled_wood");
+    public static final Block BOGGLED_WOOD_WALL = createWoodWall("boggled_wood_wall");
+    public static final Block BOGGLED_FENCE_GATE = createFenceGate("boggled_fence_gate");
+    public static final Block BOGGLED_SLAB = createWoodSlab("boggled_slab");
+    public static final Block BOGGLED_PRESSURE_PLATE = createWoodPressurePlate("boggled_pressure_plate");
+    public static final Block BOGGLED_STAIRS = createWoodStairs(AnTBlocks.BOGGLED_PLANKS.defaultBlockState(), "boggled_stairs");
+    public static final Block BOGGLED_TRAP_DOOR = createTrapdoor("boggled_trapdoor");
+    public static final Block BOGGLED_CRAFTING_TABLE = createCraftingTable("boggled_crafting_table");
+    public static final Block BOGGLED_BUTTON = createWoodenButton("boggled_button");
+    public static final Block BOGGLED_BOOKSHELF = createBookshelf("boggled_bookshelf");
+    public static final Block BOGGLED_DOOR = createDoor("boggled_door");
+    public static final Block BOGGLED_STRIPPED_ROOTS = createRoots("boggled_stripped_roots");
 
     public static final Block BOGGLED_THORNS = createThornBlock("boggled_thorns");
 
@@ -33,13 +48,19 @@ public class AnTBlocks {
     }
 
     static Block createRoots(String id) {
-        Block createBlock = new Block(BlockBehaviour.Properties.copy(Blocks.WARPED_HYPHAE));
+        Block createBlock = new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_HYPHAE));
         createBlock(createBlock, id);
         return createBlock;
     }
 
-    static Block createPlanksStairs(BlockState blockstate, String id) {
+    static Block createWoodStairs(BlockState blockstate, String id) {
         Block createBlock = StairBlockAccess.create(blockstate, BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS));
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createWoodSlab(String id) {
+        Block createBlock = new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB));
         createBlock(createBlock, id);
         return createBlock;
     }
@@ -62,8 +83,14 @@ public class AnTBlocks {
         return createBlock;
     }
 
-    static Block createCrafingTable(String id) {
+    static Block createCraftingTable(String id) {
         Block createBlock = CraftingTableBlockAccess.create(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR));
+        createBlock(createBlock, id);
+        return createBlock;
+    }
+
+    static Block createLeaves(String id) {
+        Block createBlock = new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES));
         createBlock(createBlock, id);
         return createBlock;
     }

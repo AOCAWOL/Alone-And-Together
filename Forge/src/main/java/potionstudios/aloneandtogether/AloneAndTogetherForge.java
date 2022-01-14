@@ -1,5 +1,6 @@
 package potionstudios.aloneandtogether;
 
+import net.minecraft.core.Registry;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -48,6 +49,13 @@ public class AloneAndTogetherForge {
                 return new ResourceLocation("minecraft", "textures/gui/container/creative_inventory/tab_item_search.png");
             }
         });
+
+        for (Block blocks : Registry.BLOCK){
+            String name = Registry.BLOCK.getKey(blocks).toString();
+            if (name.contains("boggled")) {
+                System.out.println(name);
+            }
+        }
 
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         bootStrap(eventBus);

@@ -5,9 +5,11 @@
   "refmap": "${refmap_target}refmap.json",
   "mixins": [
     "MixinCommonExample",
+    "access.CraftingTableBlockAccess",
     "access.DoorBlockAccess",
     "access.PressurePlateBlockAccess",
     "access.StairBlockAccess",
+    "access.TrapdoorBlockAccess",
     "access.WoodButtonBlockAccess"
   ],
   "client": [
