@@ -8,7 +8,7 @@ import net.minecraft.world.level.material.MaterialColor;
 import potionstudios.aloneandtogether.mixin.access.*;
 import potionstudios.aloneandtogether.util.RegistryObject;
 
-import javax.annotation.Nonnull;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

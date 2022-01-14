@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "aloneandtogether:block/boggled_slab"
+    },
+    "type=double": {
+      "model": "aloneandtogether:block/boggled"
+    },
+    "type=top": {
+      "model": "aloneandtogether:block/boggled_slab_top"
+    }
+  }
+}

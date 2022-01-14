@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "aloneandtogether:block/boggled",
+    "top": "aloneandtogether:block/boggled",
+    "side": "aloneandtogether:block/boggled"
+  }
+}
