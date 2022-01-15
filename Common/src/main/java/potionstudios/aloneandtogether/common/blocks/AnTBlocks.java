@@ -34,6 +34,8 @@ public class AnTBlocks {
     public static final Block BOGGLED_BOOKSHELF = createBookshelf("boggled_bookshelf");
     public static final Block BOGGLED_DOOR = createDoor("boggled_door");
     public static final Block BOGGLED_STRIPPED_ROOTS = createRoots("boggled_stripped_roots");
+    public static final Block BOGGLED_LEAVES = createLeaves("boggled_leaves");
+
 
     public static final Block BOGGLED_THORNS = createThornBlock("boggled_thorns");
 

@@ -3,7 +3,6 @@
   "package": "potionstudios.aloneandtogether.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "MixinFabricExample"
   ],
   "client": [
   ],

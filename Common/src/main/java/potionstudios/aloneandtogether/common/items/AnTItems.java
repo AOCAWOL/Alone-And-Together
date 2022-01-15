@@ -33,6 +33,8 @@ public class AnTItems {
     public static final Item BOGGLED_BOOKSHELF = createBlockItem(AnTBlocks.BOGGLED_BOOKSHELF, new Item.Properties().tab(CREATIVE_TAB), "boggled_bookshelf");
     public static final Item BOGGLED_DOOR = createBlockItem(AnTBlocks.BOGGLED_DOOR, new Item.Properties().tab(CREATIVE_TAB), "boggled_door");
     public static final Item BOGGLED_STRIPPED_ROOTS = createBlockItem(AnTBlocks.BOGGLED_STRIPPED_ROOTS, new Item.Properties().tab(CREATIVE_TAB), "boggled_stripped_roots");
+    public static final Item BOGGLED_LEAVES = createBlockItem(AnTBlocks.BOGGLED_LEAVES, new Item.Properties().tab(CREATIVE_TAB), "boggled_leaves");
+
 
     public static final Item BOGGLED_THORNS = createBlockItem(AnTBlocks.BOGGLED_THORNS, new Item.Properties().tab(CREATIVE_TAB), "boggled_thorns");
 

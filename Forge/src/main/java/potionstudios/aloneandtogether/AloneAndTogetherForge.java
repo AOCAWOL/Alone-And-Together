@@ -82,8 +82,10 @@ public class AloneAndTogetherForge {
     }
 
     private void loadFinish(FMLLoadCompleteEvent event) {
+        AloneAndTogether.threadSafeLoadFinish();
     }
 
     private void clientLoad(FMLClientSetupEvent event) {
+        AloneAndTogether.clientLoad();
     }
 }
