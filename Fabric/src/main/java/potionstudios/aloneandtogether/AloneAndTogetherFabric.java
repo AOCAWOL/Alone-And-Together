@@ -18,5 +18,6 @@ public class AloneAndTogetherFabric implements ModInitializer {
         AnTBlocks.bootStrap(registryObjects -> registryObjects.forEach(registryObject -> Registry.register(Registry.BLOCK, new ResourceLocation(AloneAndTogether.MOD_ID, registryObject.id()), registryObject.object())));
         AnTCreativeTab.init(FabricItemGroupBuilder.build(new ResourceLocation(AloneAndTogether.MOD_ID, "at"), () -> new ItemStack(Items.IRON_NUGGET)));
         AnTItems.bootStrap(registryObjects -> registryObjects.forEach(registryObject -> Registry.register(Registry.ITEM, new ResourceLocation(AloneAndTogether.MOD_ID, registryObject.id()), registryObject.object())));
+        AloneAndTogether.threadSafeLoadFinish();
     }
 }
