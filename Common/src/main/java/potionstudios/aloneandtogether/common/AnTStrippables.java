@@ -16,9 +16,9 @@ public class AnTStrippables {
         AloneAndTogether.LOGGER.debug("Alone And Together: Adding strippable Blocks...");
 
         Map<Block, Block> stripables = new IdentityHashMap<>(AxeItemAccess.getStripables());
-
-        stripables.put(BOGGLED_ROOTS, BOGGLED_STRIPPED_ROOTS);
         
         AxeItemAccess.setStripables(stripables);
+
+        stripables.put(BOGGLED_ROOTS, BOGGLED_STRIPPED_ROOTS);
     }
 }
