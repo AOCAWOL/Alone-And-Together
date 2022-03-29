@@ -1,7 +1,6 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "side": "aloneandtogether:block/boggled_stripped_roots",
-    "end": "aloneandtogether:block/boggled_stipped_roots"
+    "all": "aloneandtogether:block/boggled_stripped_roots"
   }
 }
