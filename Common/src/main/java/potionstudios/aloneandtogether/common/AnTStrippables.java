@@ -18,5 +18,7 @@ public class AnTStrippables {
         Map<Block, Block> stripables = new IdentityHashMap<>(AxeItemAccess.getStripables());
 
         stripables.put(BOGGLED_ROOTS, BOGGLED_STRIPPED_ROOTS);
+        
+        AxeItemAccess.setStripables(stripables);
     }
 }
