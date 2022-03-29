@@ -1,6 +1,15 @@
 {
   "variants": {
-    "": {
+    "axis=z": {
+      "model": "aloneandtogether:block/boggled_stripped_roots",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "aloneandtogether:block/boggled_stripped_roots",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "aloneandtogether:block/boggled_stripped_roots"
     }
   }
