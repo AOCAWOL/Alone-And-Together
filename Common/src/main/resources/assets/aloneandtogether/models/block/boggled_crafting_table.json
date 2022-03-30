@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "aloneandtogether:block/boggled_crafting_table_top",
+    "down": "aloneandtogether:block/boggled",
+    "north":"aloneandtogether:block/boggled_crafting_table_front",
+    "south": "aloneandtogether:block/boggled_crafting_table_side",
+    "east": "aloneandtogether:block/boggled_crafting_table_side",
+    "west": "aloneandtogether:block/boggled_crafting_table_side"
+  }
+}
