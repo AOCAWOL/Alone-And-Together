@@ -6,6 +6,6 @@
     "north":"aloneandtogether:block/boggled_crafting_table_front",
     "south": "aloneandtogether:block/boggled_crafting_table_side",
     "east": "aloneandtogether:block/boggled_crafting_table_side",
-    "west": "aloneandtogether:block/boggled_crafting_table_side"
+    "west": "aloneandtogether:block/boggled_crafting_table_front"
   }
 }
